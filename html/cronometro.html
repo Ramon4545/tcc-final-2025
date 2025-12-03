@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cronometro | Top One Academia</title>
+    <link rel="shortcut icon" href="../img/logo t1.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/cronometro.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="logonav"><a href="../index.html"><img src="../img/logo t2 nav.png" alt="logo1"></a></div>
+            <button class="hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <div>
+                    <ul class="nav-list">
+                        <li class="li"><a href="..#planos" class="a">Planos</a></li>
+                        <li class="li"><a href="..#unidades" class="a">Unidades</a></li>
+                        <li class="li"><a href="..#modalidades" class="a">Modalidades</a></li>
+                        <li class="li"><a href="..#saude" class="a">Dicas de saúde</a></li>
+                        <li class="li"><a href="..#contato" class="a">Contato</a></li>
+                        <li class="li"><a href="../html/cronometro.html" class="a">Cronometro</a></li>
+                    </ul>
+                </div>
+                <div class="container-mobile-agende">
+                    <button class="agende-mobile" onclick="agendarAula()">Agende sua aula</button>
+                </div>
+            </nav>
+            <button class="agende" onclick="agendarAula()">Agende sua aula</button>
+        </div>
+    </header>
+    <div class="container-contador">
+        <div class="container">
+            <h1>Contador</h1>
+            <p>Digite suas repetiçoes</p>
+
+            <div class="control-panel">
+                <input type="number" id="inputReps" placeholder="Nº de séries" min="1" value="4">
+                <button id="btnGenerate" class="btnGenerate">Gerar</button>
+                <button id="btnReset" class="secondary">Reset</button>
+            </div>
+
+            <div class="status" id="status"></div>
+
+            <div class="timer-box">
+                <h2 id="timerLabel" style="color: white;">Pronto</h2>
+                <div id="timer">00:00</div>
+
+                <button id="btnDone">Realizado ✔</button>
+
+                <div class="rest-controls">
+                    <button id="btnPause" class="secondary hidden">Pausar</button>
+                    <button id="btnSkip" class="danger hidden">Pular</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="img_icon_footer">
+            <a href="../index.html"> <img src="../img/logo t2 nav.png" alt="logo"></a>
+        </div>
+        <hr>
+        <div class="img_footer">
+            <a href="https://web.facebook.com/toponeacademia?_rdc=1&_rdr#" class="aImg"> <img
+                    src="../img/icons footer/facebook (4).png" alt="img" class="imgFace"></a>
+            <a href="https://x.com/toponeacademia" class="aImg"><img src="../img/icons footer/twitter.png"
+                    alt="img"></a>
+            <a href="https://www.youtube.com/channel/UCvr-j0EEH55COislvT0eu9A" class="aImg"> <img
+                    src="../img/icons footer/youtube (1).png" alt="img"></a>
+            <a href="https://www.instagram.com/toponeacademia/" class="aImg"><img
+                    src="../img/icons footer/logotipo-do-instagram.png" alt="img"></a>
+        </div>
+        <div class="listaFooter">
+            <ul class="ulFooter">
+                <li class="liFooter"><a href="..#planos" class="aFooter">Planos</a></li>
+                <li class="liFooter"><a href="..#unidades" class="aFooter">Unidades</a></li>
+                <li class="liFooter"><a href="..#modalidades" class="aFooter">Modalidades</a></li>
+                <li class="liFooter"><a href="..#saude" class="aFooter">Dicas de Saúde</a></li>
+                <li class="liFooter"><a href="..#contato" class="aFooter">Contato</a></li>
+            </ul>
+            <nav class="Horarios">
+                <ul class="listaHorarios">
+                    <li class="liHorarios"> ⏱︎ Segunda à Sexta: 6h a 00h</li>
+                    <li class="liHorarios"> ⏱︎ Sábado: 8h às 16h.</li>
+                    <li class="liHorarios"> ⏱︎ Domingo: 10h às 15h</li>
+                </ul>
+            </nav>
+        </div>
+        <p class="direitos">Academia TOP ONE — Todos os direitos reservados</p>
+    </footer>
+
+    <script src="../js/cronometro.js"></script>
+</body>
+
+</html>

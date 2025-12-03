@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Top One Academia</title>
+  <link rel="shortcut icon" href="./img/logo t1.png" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="nav">
+      <div class="logonav"><a href="./index.html"><img src="./img/logo t2 nav.png" alt="logo1"></a></div>
+      <button class="hamburguer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <div>
+          <ul class="nav-list">
+            <li class="li"><a href="#planos" class="a">Planos</a></li>
+            <li class="li"><a href="#unidades" class="a">Unidades</a></li>
+            <li class="li"><a href="#modalidades" class="a">Modalidades</a></li>
+            <li class="li"><a href="#saude" class="a">Dicas de saúde</a></li>
+            <li class="li"><a href="#contato" class="a">Contato</a></li>
+            <li class="li"><a href="./html/cronometro.html" class="a">Cronometro</a></li>
+          </ul>
+        </div>
+        <div class="container-mobile-agende">
+          <button class="agende-mobile" onclick="agendarAula()">Agende sua aula</button>
+        </div>
+      </nav>
+      <button class="agende" onclick="agendarAula()">Agende sua aula</button>
+    </div>
+  </header>
+  <div class="imgInicio">
+    <img src="./img/foto incio.jpg" alt="#">
+    <h2 class="txtmotivacao"> Seu corpo alcança<br><b>o que sua mente acredita.</b></h2>
+    <p class="p1">Estrutura completa, aulas dinâmicas e conteúdo prático <br> para melhorar sua performance agora com
+      dicas sobre <br>
+      sono, hidratação e prevenção de lesões.</p>
+  </div>
+  <a onclick="whats()" href="#" class="imgwpp"><img src="./img/social.png" alt="icon"></a>
+  <section id="planos" class="hero">
+    <h1 class="slide-left">Nossos <b>Planos</b></h1>
+  </section>
+  <section class="plans">
+    <div class="plangold">
+      <h3>Plano Gold</h3><br>
+      <p class="acesso">12 Meses de Acesso</p>
+      <p><b class="parcela">12x R$ 109,90</b></p>
+      <ul>
+        <li class="lista">✅ Acesso à todas as unidades</li>
+        <li class="lista">✅ Aulas coletivas e musculação</li>
+        <li class="lista">✅ Avaliação e acompanhamento</li>
+        <li class="lista">✅ Programa PowerDyn</li>
+      </ul>
+      <button class="btnA" onclick="assinarPlanoGold()">Assinar</button>
+    </div>
+    <div class="planblack">
+      <h2>Mais Vendido</h2>
+      <div class="txtBlack">
+        <h3 style="margin-top: 33px;">Plano Black</h3><br>
+        <p class="acesso">12 Meses de Acesso</p>
+        <p class="parcela"> 12x R$ 89,90</p><br>
+        <ul>
+          <li class="lista2">✅ Treinos guiados na primeira semana</li>
+          <li class="lista2">✅ Aulas exclusivas uma vez por mês</li>
+          <li class="lista2">✅ Acesso a máquinas avançadas</li>
+        </ul>
+        <button class="btnb" onclick="assinarPlanoBlack()">Assinar</button>
+      </div>
+    </div>
+    <div class="planre">
+      <h3>Plano Recorrente</h3><br>
+      <p class="acesso">Acesso Mensal</p>
+      <p class="parcela">R$ 119,90 / mês</p>
+      <ul>
+        <li class="lista3">✅ Cancelamento simples sem taxa</li>
+        <li class="lista3">✅ trancar plano em viagens curtas</li>
+        <li class="lista3">❌ Acesso ilimitado a musculação e cardio</li>
+        <li class="lista3">❌ Descontos moderados</li>
+      </ul>
+      <button class="btnc" onclick="assinarPlanoRecorrente()">Assinar</button>
+    </div>
+  </section>
+  <h2 class="udd slide-left" id="unidades" style="color: white;">Nossas <b>Unidades</b></h2>
+  <div class="grade">
+    <div class="card pa">
+      <img src="./img/sede protasio.jpg" alt="imagem_und">
+      <div class="card-info">
+        <h3 style="color:  rgb(221, 90, 2);">Protásio Alves</h3>
+        <p>Porto Alegre</p>
+        <a href="./html/protasio.html" class="btn-detalhes">Detalhes</a>
+      </div>
+    </div>
+    <div class="card ba">
+      <img src="./img/sede barao.jpg" alt="imagem_und">
+      <div class="card-info">
+        <h3 style="color:  rgb(221, 90, 2);;">Barão</h3>
+        <p>Porto Alegre</p>
+        <a href="./html/barao.html" class="btn-detalhes">Detalhes</a>
+      </div>
+    </div>
+    <div class="card as">
+      <img src="./img/sede passo de areia.jpg" alt="imagem_und">
+      <div class="card-info">
+        <h3 style="color:  rgb(221, 90, 2);">Passo D'Areia</h3>
+        <p>Porto Alegre</p>
+        <a href="./html/p_areia.html" class="btn-detalhes">Detalhes</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="sobre-nos" id="sobre-nos">
+    <div class="sobre-wrapper">
+      <div class="sobre-texto animar">
+        <h2 class="slide-left"><b>Sobre nós</b> </h2>
+        <h3>Transformando pessoas todos os dias</h3>
+        <p>
+          Na Top One, nosso objetivo vai muito além do treino.
+          Aqui, criamos uma experiência completa para ajudar você a alcançar o seu máximo potencial.
+        </p>
+        <p>
+          Com estrutura premium, ambiente motivador e acompanhamento profissional,
+          evoluímos com cada aluno passo a passo, conquista por conquista.
+        </p>
+      </div>
+      <div class="sobre-img"></div>
+    </div>
+  </section>
+
+
+  <h2 class="modalidade slide-left" id="modalidades" style="color: white;"><b>Modalidades</b> da Academia</h2>
+  <section id="modalidades" class="modalities">
+    <div class="gridM">
+
+      <div class="cardM" onclick="openModal('modal-video', 'https://www.youtube.com/embed/Fc7xyP5tLPc')">
+        <p>Musculação</p>
+        <img src="./img/icons modalidades/musculacao.png" alt="musculacao">
+      </div>
+      <div class="cardM" onclick="openModal('modal-video', 'https://www.youtube.com/embed/rYvJEgOBjdA')">
+        <p>Spinning</p>
+        <img src="./img/icons modalidades/spinning.png" alt="bke">
+      </div>
+      <div class="cardM" onclick="openModal('modal-video', 'https://www.youtube.com/embed/R1dxDXCvz1U')">
+        <p>Pilates</p>
+        <img src="./img/icons modalidades/pilates.png" alt="pilates">
+      </div>
+      <div class="cardM" onclick="openModal('modal-video', 'https://www.youtube.com/embed/Xh1ePRN3Tyw')">
+        <p>Ritmos</p>
+        <img src="./img/icons modalidades/ritmo.png" alt="">
+      </div>
+      <div class="cardM" onclick="openModal('modal-video', 'https://www.youtube.com/embed/jMMM6z9dq5E')">
+        <p>Funcional</p>
+        <img src="./img/icons modalidades/funcional.png" alt="">
+      </div>
+      <div class="cardM" onclick="openModal('modal-video', 'https://www.youtube.com/embed/Y8X3tMIOCgE')">
+        <p>Lutas</p>
+        <img src="./img/icons modalidades/luta.png" alt="luta">
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="saude">
+    <div class="saude-txt slide-left">
+      <h4>Dicas de <b>Saúde</b></h4>
+    </div>
+    <div class="caixas">
+      <div class="cx caixa1">
+        <p class="p_cx1">Auto Cuidado</p>
+        <p class="autoCuidado">Você tem cuidado de si mesmo antes e depois dos treinos ?<br><br>
+          Sae como o autocuidado pode melhorar seus resultados na academia ?
+        </p>
+      </div>
+      <div class="cx caixa2">
+        <p class="p_cx2">Performance</p>
+        <p class="performance">Quer descobrir como aumentar seu desempenho nos treinos sem exagerar na carga?<br><br>
+          Será que pequenas mudanças na rotina podem turbinar seus resultados ?</p>
+        <a href="./html/saude.html" class="aa"> <button class="btn_performace">Saiba mais</button></a>
+
+      </div>
+      <div class="cx caixa3">
+        <p class="p_cx3">Hidratação</p>
+        <p class="hidratacao">Você bebe água o suficiente durante o treino ?<br><br>
+          Sabia que a falta de hidratação pode reduzir sua força e resistência na academia?</p>
+      </div>
+    </div>
+  </section>
+  <section id="contato" class="contato">
+    <div class="faleAgente">
+      <h3>Fale com a gente</h3>
+      <p>Agende uma aula experimental ou tire suas dúvidas via WhatsApp.</p>
+      <form onsubmit="event.preventDefault(); alert('Mensagem enviada!');">
+        <input placeholder="Nome" required />
+        <input placeholder="E-mail" required />
+        <textarea placeholder="Mensagem" required></textarea>
+        <button class="btn">Enviar</button>
+      </form>
+    </div>
+  </section>
+  <div id="modal-video" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal('modal-video')">×</span>
+
+      <div class="video-responsive">
+        <iframe id="youtube-player" width="560" height="315" src="" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="img_icon_footer">
+      <a href="./index.html"> <img src="./img/logo t2 nav.png" alt="logo"></a>
+    </div>
+    <hr>
+    <div class="img_footer">
+      <a href="https://web.facebook.com/toponeacademia?_rdc=1&_rdr#" class="aImg"> <img
+          src="./img/icons footer/facebook (4).png" alt="img" class="imgFace"></a>
+      <a href="https://x.com/toponeacademia" class="aImg"><img src="./img/icons footer/twitter.png" alt="img"></a>
+      <a href="https://www.youtube.com/channel/UCvr-j0EEH55COislvT0eu9A" class="aImg"> <img
+          src="./img/icons footer/youtube (1).png" alt="img"></a>
+      <a href="https://www.instagram.com/toponeacademia/" class="aImg"><img
+          src="./img/icons footer/logotipo-do-instagram.png" alt="img"></a>
+    </div>
+    <div class="listaFooter">
+      <ul class="ulFooter">
+        <li class="liFooter"><a href="#planos" class="aFooter">Planos</a></li>
+        <li class="liFooter"><a href="#unidades" class="aFooter">Unidades</a></li>
+        <li class="liFooter"><a href="#modalidades" class="aFooter">Modalidades</a></li>
+        <li class="liFooter"><a href="#saude" class="aFooter">Dicas de Saúde</a></li>
+        <li class="liFooter"><a href="#contato" class="aFooter">Contato</a></li>
+      </ul>
+      <nav class="Horarios">
+        <ul class="listaHorarios">
+          <li class="liHorarios"> ⏱︎ Segunda à Sexta: 6h a 00h</li>
+          <li class="liHorarios"> ⏱︎ Sábado: 8h às 16h.</li>
+          <li class="liHorarios"> ⏱︎ Domingo: 10h às 15h</li>
+        </ul>
+      </nav>
+    </div>
+    <p class="direitos">Academia TOP ONE — Todos os direitos reservados</p>
+  </footer>
+
+  <script src="https://eq-web.s3.amazonaws.com/equalweb.js?site-id=XXXX" defer></script>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+
+<script src="./js/script.js"></script>
+</body>
+
+</html>

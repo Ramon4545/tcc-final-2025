@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Saúde | Top One Academia</title>
+    <link rel="shortcut icon" href="../img/logo t1.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/saude.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="logonav"><a href="../index.html"><img src="../img/logo t2 nav.png" alt="logo1"></a></div>
+            <button class="hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <div>
+                    <ul class="nav-list">
+                        <li class="li"><a href="..#planos" class="a">Planos</a></li>
+                        <li class="li"><a href="..#unidades" class="a">Unidades</a></li>
+                        <li class="li"><a href="..#modalidades" class="a">Modalidades</a></li>
+                        <li class="li"><a href="..#saude" class="a">Dicas de saúde</a></li>
+                        <li class="li"><a href="..#contato" class="a">Contato</a></li>
+                        <li class="li"><a href="../html/cronometro.html" class="a">Cronometro</a></li>
+                    </ul>
+                </div>
+                <div class="container-mobile-agende">
+                    <button class="agende-mobile" onclick="agendarAula()">Agende sua aula</button>
+                </div>
+            </nav>
+            <button class="agende" onclick="agendarAula()">Agende sua aula</button>
+        </div>
+    </header>
+
+    <section id="saude" class="health">
+        <h2>Dicas de <b>Saúde</b></h2>
+        <div class="grids">
+            <article class="cardl sono">
+                <h3>Qualidade de Sono</h3>
+                <p>Dormir bem melhora a força e a recuperação muscular.</p>
+                <div class="accordion">
+                    <div class="toggle">Rotina para dormir melhor + </div>
+                    <div class="hidden">
+                        <ul>
+                            <li class="listaD">Mantenha horários consistentes.</li>
+                            <li class="listaD">Evite telas antes de dormir.</li>
+                            <li class="listaD">Ambiente escuro e silencioso.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cardl performance">
+                <h3>Importância do Sono na Performance</h3>
+                <p>Durante o sono profundo, o corpo libera hormônios que auxiliam na recuperação muscular e no ganho de
+                    força.
+                </p>
+                <div class="accordion">
+                    <div class="toggle">Sono adequado<span>+</span></div>
+                    <div class="hidden">
+                        <ul>
+                            <li>Melhora da memória e do foco nos treinos.</li>
+                            <li>Maior liberação de hormônio do crescimento.</li>
+                            <li>Recuperação mais rápida entre as sessões de treino.</li>
+                            <li>Redução do risco de overtraining e lesões.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cardl Higiene">
+                <h3>Higiene do Sono</h3>
+                <p>Práticas simples que ajudam a dormir melhor e acordar com mais energia.</p>
+                <div class="accordion">
+                    <div class="toggle">Dicas práticas<span>+</span></div>
+                    <div class="hidden">
+                        <ul>
+                            <li>Desligue telas e luzes fortes 1 hora antes de deitar.</li>
+                            <li>Evite cafeína e álcool próximo ao horário de dormir.</li>
+                            <li>Faça alongamentos leves ou respiração profunda antes de deitar.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cardl dormir">
+                <h3>Quanto Dormir?</h3>
+                <p>Nem todos precisam do mesmo tempo de sono, mas a regularidade é o fator mais importante.</p>
+                <div class="accordion">
+                    <div class="toggle">Recomendações gerais<span>+</span></div>
+                    <div class="hidden">
+                        <ul>
+                            <li>Adultos: 7–9 horas por noite.</li>
+                            <li>Atletas e praticantes intensos: 8–10 horas.</li>
+                            <li>Tente manter o mesmo horário todos os dias, inclusive nos fins de semana.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cardl hidratação">
+                <h3>Hidratação</h3>
+                <p>Água é combustível para seu corpo.</p>
+                <div class="accordion">
+                    <div class="toggle">Impactos da desidratação<span>+</span></div>
+                    <div class="hidden">
+                        <ul>
+                            <li>Reduz o desempenho físico em até 30%.</li>
+                            <li>Aumenta a fadiga muscular e o risco de câimbras.</li>
+                            <li>Compromete o equilíbrio térmico e o raciocínio.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cardl Quantidade">
+                <h3>Como Calcular a Quantidade Ideal</h3>
+                <p>A regra de ouro é simples: beba água ao longo do dia, não apenas quando sentir sede.</p>
+                <div class="accordion">
+                    <div class="toggle">Guia rápido<span>+</span></div>
+                    <div class="hidden">
+                        <ul>
+                            <li>2,5 a 3,5 litros por dia para adultos ativos.</li>
+                            <li>Multiplique 35 ml × seu peso corporal para estimar sua meta diária.</li>
+                            <li>Reponha 500 ml para cada hora de treino intenso.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cardl agua">
+                <h3>Além da Água</h3>
+                <p>Outros líquidos também podem contribuir, mas é importante ter equilíbrio.</p>
+                <div class="accordion">
+                    <div class="toggle">Alternativas saudáveis<span>+</span></div>
+                    <div class="hidden">
+                        <ul>
+                            <li>Água de coco natural — rica em eletrólitos.</li>
+                            <li>Chás gelados sem açúcar (hibisco, camomila, hortelã).</li>
+                            <li>Frutas</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cardl lesao">
+                <h3>Prevenção de Lesões</h3>
+                <p>Treine com segurança para manter consistência.</p>
+                <div class="accordion">
+                    <div class="toggle">Boas práticas<span>+</span></div>
+                    <div class="hidden">
+                        <ul>
+                            <li>Aquecimento e mobilidade.</li>
+                            <li>Progresso gradual.</li>
+                            <li>Foco na técnica.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="cardl escuta">
+                <h3>Escuta Corporal</h3>
+                <p>Entender os sinais do corpo é essencial para manter a consistência e evitar interrupções por dor ou
+                    fadiga.</p>
+                <div class="accordion">
+                    <div class="toggle">Sinais de alerta<span>+</span></div>
+                    <div class="hidden">
+                        <ul>
+                            <li>Dores agudas persistentes: procure um profissional.</li>
+                            <li>Fadiga constante: revise descanso e alimentação.</li>
+                            <li>Use dias de recuperação ativa (caminhada leve, alongamentos).</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="containerImc">
+            <div class="imc-content">
+                <h4 class="txtimc">Calcule seu <b>IMC</b></h4>
+                <p class="pimc">Saber seu IMC ajuda a identificar se seu peso está dentro do ideal e alerta para riscos
+                    à saúde. <br> É uma forma simples de acompanhar seu bem-estar.</p>
+
+                <div class="calculadora-wrapper">
+                    <div class="input-group">
+                        <label for="peso">Peso (kg):</label>
+                        <input type="number" id="peso" placeholder="Ex: 70.5">
+                    </div>
+                    <div class="input-group">
+                        <label for="altura">Altura (m):</label>
+                        <input type="number" id="altura" placeholder="Ex: 1.75" step="0.01">
+                    </div>
+                    <button class="btn-calcular" onclick="calcularIMC()">Calcular Resultado</button>
+                </div>
+
+                <div id="resultado-imc" class="resultado-box" style="display: none;"></div>
+            </div>
+            <div class="tabelaImc">
+                <table>
+                    <tr>
+                        <th>IMC</th>
+                        <th>Classificação</th>
+                    </tr>
+                    <tr>
+                        <td>&lt; 18,5</td>
+                        <td>Baixo peso</td>
+                    </tr>
+                    <tr>
+                        <td>&gt; 18,5 &lt; 25,0 </td>
+                        <td>Peso ideal</td>
+                    </tr>
+                    <tr>
+                        <td>&gt; 25,0 &lt; 30,0 </td>
+                        <td>Sobre Peso</td>
+                    </tr>
+                    <tr>
+                        <td>&gt; 30,0 &lt; 35,0</td>
+                        <td>Obesidade grau |</td>
+                    </tr>
+                    <tr>
+                        <td>&gt; 35,0 &lt; 40,0</td>
+                        <td>Obesidade grau ||</td>
+                    </tr>
+                    <tr>
+                        <td>&gt; 40,0</td>
+                        <td>Obesidade grau |||</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <div class="img_icon_footer">
+            <a href="../index.html" class="imgFooter"> <img src="../img/logo t2 nav.png" alt="logo"></a>
+        </div>
+        <hr>
+        <div class="img_footer">
+            <a href="https://web.facebook.com/toponeacademia?_rdc=1&_rdr#" class="aImg"> <img
+                    src="../img/icons footer/facebook (4).png" alt="img" class="imgFace"></a>
+            <a href="https://x.com/toponeacademia" class="aImg"><img src="../img/icons footer/twitter.png"
+                    alt="img"></a>
+            <a href="https://www.youtube.com/channel/UCvr-j0EEH55COislvT0eu9A" class="aImg"> <img
+                    src="../img/icons footer/youtube (1).png" alt="img"></a>
+            <a href="https://www.instagram.com/toponeacademia/" class="aImg"><img
+                    src="../img/icons footer/logotipo-do-instagram.png" alt="img"></a>
+        </div>
+        <div class="listaFooter">
+            <ul class="ulFooter">
+                <li class="liFooter"><a href="..#planos" class="aFooter">Planos</a></li>
+                <li class="liFooter"><a href="..#unidades" class="aFooter">Unidades</a></li>
+                <li class="liFooter"><a href="..#modalidades" class="aFooter">Modalidades</a></li>
+                <li class="liFooter"><a href="..#saude" class="aFooter">Dicas de Saúde</a></li>
+                <li class="liFooter"><a href="..#contato" class="aFooter">Contato</a></li>
+            </ul>
+            <nav class="Horarios">
+                <ul class="listaHorarios">
+                    <li class="liHorarios"> ⏱︎ Segunda à Sexta: 6h a 00h</li>
+                    <li class="liHorarios"> ⏱︎ Sábado: 8h às 16h.</li>
+                    <li class="liHorarios"> ⏱︎ Domingo: 10h às 15h</li>
+                </ul>
+            </nav>
+        </div>
+        <p class="direitos">Academia TOP ONE — Todos os direitos reservados</p>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script src="../js/saude.js"></script>
+</body>
+
+</html>
